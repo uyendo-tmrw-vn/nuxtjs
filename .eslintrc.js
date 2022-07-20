@@ -13,5 +13,10 @@ module.exports = {
   ],
   plugins: [],
   // add your custom rules here
-  rules: { }
+  rules: {
+    "indent": [2, "tab"],
+    "no-tabs": 0,
+    "eol-last": ["error", "never"],
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+  }
 }
