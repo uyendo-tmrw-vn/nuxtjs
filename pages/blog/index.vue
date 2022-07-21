@@ -3,6 +3,7 @@
 		Page Blog
 	</h1>
 </template>
+
 <script>
 export default {
 	layout: 'blog'
