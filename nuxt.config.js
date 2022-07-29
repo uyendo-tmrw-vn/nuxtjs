@@ -49,6 +49,15 @@ export default {
 
   // loading 
   loading: false,
-  loading: '~/components/Loading.vue'
+  loading: '~/components/Loading.vue',
+
+  // or
+  pageTransition: {
+    name: 'page',
+    mode: 'out-in',
+    beforeEnter (el) {
+      console.log('Before enter...');
+    }
+  }
 
 }
