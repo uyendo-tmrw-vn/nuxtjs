@@ -1,11 +1,25 @@
 <template>
-  <div class="container">
-    <Logo />
-    <div class="mt-5 text-center">
-      <Nuxt />
+  <div>
+    <Loading />
+    <div class="container">
+      <Logo />
+      <div class="mt-5 text-center">
+        <Nuxt />
+      </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
+  }
+}
+</script>
 
 <style>
 .button--green {

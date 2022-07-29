@@ -1,21 +1,25 @@
 <template>
-  <div class="container-fluid text-[#fff]">
-    <div class="flex justify-start">
-      <div class="w-[20%] border-r-1 border-[#fff] bg-[#1f374a] h-screen overflow-y-auto">
-        <Logo />
-        <Menu />
-      </div>
-      <div class="flex-1 bg-[#2f495e] p-5">
-        <Nuxt />
+  <div>
+    <Loading />
+    <div class="container-fluid text-[#fff]">
+      <div class="flex justify-start">
+        <div class="w-[20%] border-r-1 border-[#fff] bg-[#1f374a] h-screen overflow-y-auto">
+          <Logo />
+          <Menu />
+        </div>
+        <div class="flex-1 bg-[#2f495e] p-5">
+          <Nuxt />
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
+
 export default {
   data() {
     return {
-      title: 'Home page'
+      title: 'Home page',
     }
   },
   head() {
@@ -30,7 +34,10 @@ export default {
     }
   },
   mounted() {
-    console.log(444, this.$route)
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
   }
 }
 </script>

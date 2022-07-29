@@ -47,4 +47,8 @@ export default {
 
   devServerHandlers: [],
 
+  // loading 
+  loading: false,
+  loading: '~/components/Loading.vue'
+
 }
