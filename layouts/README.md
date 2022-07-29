@@ -5,3 +5,13 @@
 This directory contains your Application Layouts.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/views#layouts).
+========================
+
+``
+
+    default.vue : only logo
+    main.vue    : logo and menu (for all pages)
+    blog.vue    : blog menu 
+    error.vue   : content page error
+
+``

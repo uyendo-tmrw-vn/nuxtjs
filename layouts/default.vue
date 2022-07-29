@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <Logo />
-    <Menu />
     <div class="mt-5 text-center">
       <Nuxt />
     </div>

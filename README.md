@@ -18,3 +18,11 @@ $ npm run generate / yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+# Libs 
+
+```
+https://tailwindcss.com/
+https://heroicons.com/
+https://vuetifyjs.com/en/
+```
