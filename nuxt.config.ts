@@ -6,4 +6,12 @@ export default defineNuxtConfig({
 		url: "-",
 		token: "-"
 	},
+	target: 'static',
+	"nitro": {
+		"output": {
+			dir: 'output',
+			serverDir: 'output/server',
+			publicDir: 'output/public'
+		}
+	}
 });
