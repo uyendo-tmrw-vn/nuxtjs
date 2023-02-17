@@ -6,7 +6,7 @@
     >User</NuxtLink>
 
     <Head>
-      <Title>Article {{ postDetail.id }}.{{ postDetail.username}}</Title>
+      <Title>User - {{ postDetail.id }}.{{ postDetail.username}}</Title>
       <Meta
         name="description"
         :content="`${postDetail.id}`+'.'+`${postDetail.email}`"

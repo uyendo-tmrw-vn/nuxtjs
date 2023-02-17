@@ -20,6 +20,12 @@
               class="text-left block ml-2 underline"
             >User</NuxtLink>
           </li>
+          <li>
+            <NuxtLink
+              :to="`/post`"
+              class="text-left block ml-2 underline"
+            >Post</NuxtLink>
+          </li>
         </ul>
       </div>
     </div>

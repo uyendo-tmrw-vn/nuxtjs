@@ -6,7 +6,7 @@
     >Article</NuxtLink>
 
     <Head>
-      <Title>Article {{ postDetail.id }}.{{ postDetail.title}}</Title>
+      <Title>Article - {{ postDetail.id }}.{{ postDetail.title}}</Title>
       <Meta
         name="description"
         :content="`${postDetail.id}`+'.'+`${postDetail.body}`"
@@ -79,5 +79,5 @@ const post = await fetch(
     postDetail.value = json;
   });
 
-console.log(postDetail);
+// console.log(postDetail);
 </script>

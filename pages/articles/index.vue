@@ -70,6 +70,6 @@ const posts = await fetch("https://jsonplaceholder.typicode.com/posts")
     resultPosts.value = json;
   });
 
-  console.log({resultPosts});
+  // console.log({resultPosts});
 
 </script>
